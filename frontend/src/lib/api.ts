@@ -13,7 +13,7 @@ import type {
 
 // In development, Vite proxy forwards /api/* to localhost:8000.
 // In production, set VITE_API_URL to the deployed backend origin
-// (e.g. https://your-backend.koyeb.app).
+// (e.g. https://your-backend.leapcell.app).
 // An empty string means same-origin requests.
 const BASE = import.meta.env.VITE_API_URL ?? "";
 
