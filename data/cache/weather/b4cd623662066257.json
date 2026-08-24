@@ -1,0 +1,13 @@
+{
+  "timestamp": 1787552882.389024,
+  "metrics": {
+    "latitude": 19.0596,
+    "longitude": 72.8295,
+    "annual_irradiance_kwh_m2": 1387.5,
+    "avg_temperature_c": 27.2,
+    "avg_cloud_cover_pct": 65.2,
+    "weather_condition": "Mostly Cloudy",
+    "data_source": "Open-Meteo Live API",
+    "is_real_data": true
+  }
+}

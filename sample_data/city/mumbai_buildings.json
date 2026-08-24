@@ -1,0 +1,109 @@
+{
+  "buildings": [
+    {
+      "building_id": "B001",
+      "name": "SolarIQ Demo Building 1",
+      "source": "osm",
+      "coordinates": {
+        "latitude": 19.0760,
+        "longitude": 72.8777
+      },
+      "crs": "EPSG:4326",
+      "surfaces": [
+        {
+          "surface_id": "B001-S001",
+          "vertices": [
+            [0, 0, 10],
+            [20, 0, 10],
+            [20, 20, 10],
+            [0, 20, 10]
+          ]
+        },
+        {
+          "surface_id": "B001-S002",
+          "vertices": [
+            [0, 0, 0],
+            [0, 20, 0],
+            [0, 20, 10],
+            [0, 0, 10]
+          ]
+        },
+        {
+          "surface_id": "B001-S003",
+          "vertices": [
+            [20, 0, 0],
+            [20, 0, 10],
+            [20, 20, 10],
+            [20, 20, 0]
+          ]
+        },
+        {
+          "surface_id": "B001-S004",
+          "vertices": [
+            [0, 0, 0],
+            [20, 0, 0],
+            [20, 0, 10],
+            [0, 0, 10]
+          ]
+        },
+        {
+          "surface_id": "B001-S005",
+          "vertices": [
+            [0, 20, 0],
+            [0, 20, 10],
+            [20, 20, 10],
+            [20, 20, 0]
+          ]
+        },
+        {
+          "surface_id": "B001-S006",
+          "vertices": [
+            [0, 0, 0],
+            [0, 20, 0],
+            [20, 20, 0],
+            [20, 0, 0]
+          ]
+        }
+      ]
+    },
+    {
+      "building_id": "B002",
+      "name": "SolarIQ Demo Building 2",
+      "source": "osm",
+      "coordinates": {
+        "latitude": 19.0755,
+        "longitude": 72.8790
+      },
+      "crs": "EPSG:4326",
+      "surfaces": [
+        {
+          "surface_id": "B002-S001",
+          "vertices": [
+            [30, 0, 15],
+            [45, 0, 15],
+            [45, 15, 15],
+            [30, 15, 15]
+          ]
+        },
+        {
+          "surface_id": "B002-S002",
+          "vertices": [
+            [30, 0, 0],
+            [30, 15, 0],
+            [30, 15, 15],
+            [30, 0, 15]
+          ]
+        },
+        {
+          "surface_id": "B002-S003",
+          "vertices": [
+            [45, 0, 0],
+            [45, 0, 15],
+            [45, 15, 15],
+            [45, 15, 0]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "OSM-001",
+        "name": "Mumbai Office Tower",
+        "building": "yes",
+        "height": 45.0,
+        "source": "osm"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [72.8777, 19.0760],
+            [72.8782, 19.0760],
+            [72.8782, 19.0765],
+            [72.8777, 19.0765],
+            [72.8777, 19.0760]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "OSM-002",
+        "name": "Residential Complex",
+        "building": "apartments",
+        "height": 30.0,
+        "source": "osm"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [72.8790, 19.0750],
+            [72.8795, 19.0750],
+            [72.8795, 19.0758],
+            [72.8790, 19.0758],
+            [72.8790, 19.0750]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "OSM-003",
+        "name": "Shopping Mall",
+        "building": "retail",
+        "height": 20.0,
+        "source": "osm"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [72.8800, 19.0770],
+            [72.8808, 19.0770],
+            [72.8808, 19.0775],
+            [72.8800, 19.0775],
+            [72.8800, 19.0770]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "OSM-004",
+        "name": "Warehouse District",
+        "building": "industrial",
+        "height": 12.0,
+        "source": "osm"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [72.8760, 19.0740],
+            [72.8768, 19.0740],
+            [72.8768, 19.0745],
+            [72.8760, 19.0745],
+            [72.8760, 19.0740]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "OSM-005",
+        "name": "University Campus",
+        "building": "university",
+        "height": 25.0,
+        "source": "osm"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [72.8810, 19.0780],
+            [72.8820, 19.0780],
+            [72.8820, 19.0788],
+            [72.8810, 19.0788],
+            [72.8810, 19.0780]
+          ]
+        ]
+      }
+    }
+  ]
+}

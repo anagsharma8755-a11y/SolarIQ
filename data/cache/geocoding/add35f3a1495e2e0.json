@@ -1,0 +1,21 @@
+{
+  "query": "Bandra West, Mumbai",
+  "timestamp": 1787552881.9088805,
+  "data": [
+    {
+      "location_name": "Bandra West",
+      "display_name": "Bandra West, Mumbai Zone 3, Mumbai, Mumbai Suburban District, Maharashtra, India",
+      "latitude": 19.058336,
+      "longitude": 72.830267,
+      "bounding_box": [
+        19.040597,
+        72.818234,
+        19.081622,
+        72.841346
+      ],
+      "category": "suburb",
+      "importance": 0.4446870948506422,
+      "is_demo": false
+    }
+  ]
+}

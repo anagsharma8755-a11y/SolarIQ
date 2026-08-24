@@ -1,0 +1,40 @@
+# SolarIQ Docker Compose
+#
+# Usage:
+#   docker compose up              # start with hot-reload
+#   docker compose up --build      # rebuild images
+#   docker compose down            # stop and remove
+#
+# The backend is available at http://localhost:8000
+# API docs at http://localhost:8000/docs
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    ports:
+      - "${SOLARIQ_PORT:-8000}:8000"
+    environment:
+      - SOLARIQ_ENV=${SOLARIQ_ENV:-development}
+      - SOLARIQ_LOG_LEVEL=${SOLARIQ_LOG_LEVEL:-INFO}
+      - SOLARIQ_HOST=0.0.0.0
+      - SOLARIQ_PORT=8000
+      - SOLARIQ_DATABASE_URL=sqlite:///data/solariq.db
+      - SOLARIQ_CORS_ORIGINS=${SOLARIQ_CORS_ORIGINS:-*}
+    volumes:
+      # Persist data across restarts.
+      - solariq-data:/app/data
+      - solariq-models:/app/models
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+
+volumes:
+  solariq-data:
+  solariq-models:

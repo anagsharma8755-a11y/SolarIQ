@@ -1,0 +1,21 @@
+{
+  "query": "Mumbai Custom Test",
+  "timestamp": 1787552881.9164224,
+  "data": [
+    {
+      "location_name": "Mumbai",
+      "display_name": "Mumbai, Maharashtra, India",
+      "latitude": 19.076,
+      "longitude": 72.8777,
+      "bounding_box": [
+        18.89,
+        72.77,
+        19.27,
+        72.98
+      ],
+      "category": "city",
+      "importance": 0.9,
+      "is_demo": false
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "query": "Thakur College",
+  "timestamp": 1787552882.3446596,
+  "data": [
+    {
+      "location_name": "Jan Nayak Karpuri Thakur Medical college and Hospital",
+      "display_name": "Jan Nayak Karpuri Thakur Medical college and Hospital, NH131, Singheswar, Madhepura, Bihar, 852128, India",
+      "latitude": 25.959237,
+      "longitude": 86.797451,
+      "bounding_box": [
+        25.955968,
+        86.79522,
+        25.962733,
+        86.800897
+      ],
+      "category": "college",
+      "importance": 5.14419775691923e-05,
+      "is_demo": false
+    },
+    {
+      "location_name": "Thakur PG College of Education",
+      "display_name": "Thakur PG College of Education, NH503, Dhaliara, Dehra, Kangra, Himachal Pradesh, 177103, India",
+      "latitude": 31.847778,
+      "longitude": 76.19102,
+      "bounding_box": [
+        31.847728,
+        76.19097,
+        31.847828,
+        76.19107
+      ],
+      "category": "college",
+      "importance": 3.750133516437045e-05,
+      "is_demo": false
+    },
+    {
+      "location_name": "Thakur Ram Multiple Campus",
+      "display_name": "Thakur Ram Multiple Campus, Adarshnagar Marg, Birgunj-10, \u0935\u0940\u0930\u0917\u091e\u094d\u091c, \u092c\u0940\u0930\u0917\u0928\u094d\u091c \u092e\u0939\u093e\u0928\u0917\u0930\u092a\u093e\u0932\u093f\u0915\u093e, \u092a\u0930\u094d\u0938\u093e \u091c\u093f\u0932\u094d\u0932\u093e, \u092e\u0927\u0947\u0936 \u092a\u094d\u0930\u0926\u0947\u0936, 44300, \u0928\u0947\u092a\u093e\u0932",
+      "latitude": 27.01289,
+      "longitude": 84.867559,
+      "bounding_box": [
+        27.012097,
+        84.866824,
+        27.013668,
+        84.86828
+      ],
+      "category": "college",
+      "importance": 5.0915541313756273e-05,
+      "is_demo": false
+    },
+    {
+      "location_name": "Thakur Panchanan Mahila Mahavidyalay",
+      "display_name": "Thakur Panchanan Mahila Mahavidyalay, Magazine Road, Cooch Behar - II, Cooch Behar, West Bengal, 736101, India",
+      "latitude": 26.31754,
+      "longitude": 89.450404,
+      "bounding_box": [
+        26.317229,
+        89.450047,
+        26.317772,
+        89.450755
+      ],
+      "category": "college",
+      "importance": 2.8699931334355954e-05,
+      "is_demo": false
+    }
+  ]
+}

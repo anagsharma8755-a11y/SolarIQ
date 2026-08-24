@@ -1,0 +1,26 @@
+{
+  "10b_100s": {
+    "buildings": 10,
+    "total_surfaces": 100,
+    "geometry": 24.21,
+    "solar": 0.72,
+    "building_analysis": 25.23,
+    "optimization": 24.7
+  },
+  "100b_1000s": {
+    "buildings": 100,
+    "total_surfaces": 1000,
+    "geometry": 220.37,
+    "solar": 9.47,
+    "building_analysis": 216.79,
+    "optimization": 309.49
+  },
+  "100b_5000s": {
+    "buildings": 100,
+    "total_surfaces": 5000,
+    "geometry": 1433.41,
+    "solar": 47.55,
+    "building_analysis": 1494.72,
+    "optimization": 1570.76
+  }
+}

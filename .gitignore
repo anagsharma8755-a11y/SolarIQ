@@ -1,0 +1,68 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+.venv-1/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# ML model files (untrusted unless verified)
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+models/*.pth
+models/*.onnx
+models/*.bin
+
+# Data directories (generated)
+data/raw/
+data/external/
+data/processed/
+!sample_data/
+
+# Test and coverage
+.coverage
+htmlcov/
+.pytest_cache/
+coverage.xml
+
+# Logs
+*.log
+
+# Frontend build output
+frontend/dist/
+frontend/node_modules/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Vite
+frontend/tsconfig.tsbuildinfo
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,52 @@
+# SolarIQ — Render Blueprint
+#
+# Deploy both services with:
+#   render blueprints apply
+#
+# Or deploy individually via the Render dashboard.
+# Docs: https://render.com/docs/blueprint-spec
+
+services:
+  # ──────────────────────────────────────────────
+  # Backend — FastAPI (Docker-based)
+  # ──────────────────────────────────────────────
+  - name: solariq-backend
+    type: web
+    runtime: image
+    image:
+      url: ""  # Will build from Dockerfile in repo root
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    envVars:
+      - key: SOLARIQ_ENV
+        value: production
+      - key: SOLARIQ_HOST
+        value: 0.0.0.0
+      - key: SOLARIQ_PORT
+        value: 8000
+      - key: SOLARIQ_LOG_LEVEL
+        value: INFO
+      - key: SOLARIQ_DATABASE_URL
+        value: sqlite:///data/solariq.db
+      - key: SOLARIQ_CORS_ORIGINS
+        sync: false  # Set to your frontend URL after deployment
+      - key: SOLARIQ_DATA_DIR
+        value: data
+      - key: SOLARIQ_PROCESSED_DATA_DIR
+        value: data/processed
+      - key: SOLARIQ_MODEL_DIR
+        value: models
+    healthCheckPath: /health
+    autoDeploy: true
+
+  # ──────────────────────────────────────────────
+  # Frontend — Static Site
+  # ──────────────────────────────────────────────
+  - name: solariq-frontend
+    type: web
+    runtime: static
+    staticPublishPath: ./frontend/dist
+    buildCommand: cd frontend && npm install && npm run build
+    envVars:
+      - key: VITE_API_URL
+        sync: false  # Set to your backend URL after deployment
