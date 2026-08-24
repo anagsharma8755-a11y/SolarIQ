@@ -12,9 +12,7 @@ services:
   # ──────────────────────────────────────────────
   - name: solariq-backend
     type: web
-    runtime: image
-    image:
-      url: ""  # Will build from Dockerfile in repo root
+    runtime: docker
     dockerfilePath: ./Dockerfile
     dockerContext: .
     envVars:
@@ -22,14 +20,12 @@ services:
         value: production
       - key: SOLARIQ_HOST
         value: 0.0.0.0
-      - key: SOLARIQ_PORT
-        value: 8000
       - key: SOLARIQ_LOG_LEVEL
         value: INFO
       - key: SOLARIQ_DATABASE_URL
         value: sqlite:///data/solariq.db
       - key: SOLARIQ_CORS_ORIGINS
-        sync: false  # Set to your frontend URL after deployment
+        sync: false
       - key: SOLARIQ_DATA_DIR
         value: data
       - key: SOLARIQ_PROCESSED_DATA_DIR
@@ -37,7 +33,7 @@ services:
       - key: SOLARIQ_MODEL_DIR
         value: models
     healthCheckPath: /health
-    autoDeploy: true
+    autoDeployTrigger: commit
 
   # ──────────────────────────────────────────────
   # Frontend — Static Site
@@ -47,6 +43,7 @@ services:
     runtime: static
     staticPublishPath: ./frontend/dist
     buildCommand: cd frontend && npm install && npm run build
+    autoDeployTrigger: commit
     envVars:
       - key: VITE_API_URL
-        sync: false  # Set to your backend URL after deployment
+        sync: false
