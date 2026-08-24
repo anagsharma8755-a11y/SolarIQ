@@ -42,7 +42,7 @@ RUN mkdir -p data/processed data/cache/geocoding data/cache/osm data/cache/weath
 # Environment defaults.
 ENV SOLARIQ_ENV=production \
     SOLARIQ_HOST=0.0.0.0 \
-    SOLARIQ_PORT=8000 \
+    SOLARIQ_PORT=8080 \
     SOLARIQ_LOG_LEVEL=INFO \
     SOLARIQ_DATABASE_URL=sqlite:///data/solariq.db \
     SOLARIQ_DATA_DIR=data \
@@ -51,9 +51,9 @@ ENV SOLARIQ_ENV=production \
 
 USER solariq
 
-EXPOSE 8000
+EXPOSE 8080
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')" || exit 1
+    CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:${PORT:-8080}/health')" || exit 1
 
-CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["sh", "-c", "uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8080}"]
